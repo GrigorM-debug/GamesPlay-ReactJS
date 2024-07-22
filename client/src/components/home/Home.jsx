@@ -4,7 +4,6 @@ import Main from "../main/Main";
 export default function Home() {
     return (
         <div id="box">
-            <Header />
             <Main />
         </div>
     );
