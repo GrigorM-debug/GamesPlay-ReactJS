@@ -1,9 +1,13 @@
 import * as requester from './requester';
 
-const baseURL = 'http://localhost:3030/jsonstore/';
+const baseURL = 'http://localhost:3030/jsonstore/games';
 
 async function getAll() {
-    const games = await requester.get(`${baseURL}/games`);
+    const result = await requester.get(baseURL);
+
+    const games = Object.values(result);
+
+    console.log(games)
 
     return games;
 }
@@ -11,8 +15,8 @@ async function getAll() {
 
 
 
-const games_Api = {
+const gamesApi = {
     getAll
 }
 
-export default games_Api;
+export default gamesApi;

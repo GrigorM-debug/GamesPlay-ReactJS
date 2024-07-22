@@ -12,13 +12,15 @@ export async function requester(method, url, data) {
         options.body = JSON.stringify(data);
     }
 
-    const reponses = await fetch(url, options); 
-    const result = await reponses.json();
+    const reponse = await fetch(url, options); 
+    const result = await reponse.json();
+
+    // console.log(result)
 
     return result;
 }
 
-export const get = () => requester.bind(null, 'GET');
+export const get = requester.bind(null, 'GET');
 export const post = () => requester.bind(null, 'POST');
 export const put = () => requester.bind(null, 'PUT');
 export const del = () => requester.bind(null, 'DELETE');
