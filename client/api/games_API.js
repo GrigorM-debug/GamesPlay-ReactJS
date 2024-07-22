@@ -7,16 +7,22 @@ async function getAll() {
 
     const games = Object.values(result);
 
-    console.log(games)
+    // console.log(games)
 
     return games;
 }
 
+async function getOne(gameId) {
+    const game = await requester.get(`${baseURL}/${gameId}`);
+
+    return game;
+}
 
 
 
 const gamesApi = {
-    getAll
+    getAll,
+    getOne
 }
 
 export default gamesApi;
