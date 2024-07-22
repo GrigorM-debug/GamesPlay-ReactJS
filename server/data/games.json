@@ -1,0 +1,26 @@
+{
+    "2539bac8-9082-4d7f-94eb-77c30001ba2d": {
+        "title": "Cover Fire",
+        "category": "Action",
+        "imageUrl": "./images/avatar-1.jpg",
+        "description": "Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for. Set in a world where fantasy ",
+        "level": "MaxLevel: 4",
+        "_id": "2539bac8-9082-4d7f-94eb-77c30001ba2d"
+    },
+    "b1c7c893-4db3-4eb4-8ef6-95b45a14cddf": {
+        "title": "Assassin's Creed III",
+        "category": "Action, Adventure",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/29/Assassin%27s_Creed_III_Game_Cover.jpg",
+        "description": "Assassin's Creed III is a 2012 action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It is the fifth major installment in the Assassin's Creed series, and a direct sequel to 2011's Assassin's Creed: Revelations.  ",
+        "level": "No levels",
+        "_id": "b1c7c893-4db3-4eb4-8ef6-95b45a14cddf"
+    },
+    "53a21c75-1919-4b6e-9a1e-44993716e569": {
+        "title": "Counter-Strike 1.6",
+        "category": "Action, FPS",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+        "description": "Counter-Strike (also known as Half-Life: Counter-Strike or Counter-Strike 1.6)[5] is a tactical first-person shooter game developed by Valve. It was initially developed and released as a Half-Life modification by Minh Gooseman Le and Jess Cliffe in 1999, before Le and Cliffe were hired and the game's intellectual property acquired.",
+        "level": "No levels",
+        "_id": "53a21c75-1919-4b6e-9a1e-44993716e569"
+    }
+}
