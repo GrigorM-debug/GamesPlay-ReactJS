@@ -18,11 +18,18 @@ async function getOne(gameId) {
     return game;
 }
 
+async function createGameComment(gameId, newComment) {
+    console.log(newComment);
+    const result = await requester.post(`${baseURL}/${gameId}/comments`, newComment)
+
+    return result;
+}
 
 
 const gamesApi = {
     getAll,
-    getOne
+    getOne,
+    createGameComment
 }
 
 export default gamesApi;

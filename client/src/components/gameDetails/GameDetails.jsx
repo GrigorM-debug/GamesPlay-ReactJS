@@ -6,6 +6,10 @@ import CommentItem from "./comment-Item/CommentItem";
 export default function GameDetails() {
     const [game, setGame] = useState({});
     const {gameId} = useParams();
+
+    const [username, setUsername] = useState('');
+    const [content, setContent] = useState('');
+    const [newComment, setNewComment] = useState(null)
     // console.log(gameId)
 
     useEffect(() => {
@@ -16,6 +20,29 @@ export default function GameDetails() {
             // console.log(result)
         })()
     }, []);
+
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        const newComment = {
+            username,
+            content
+        }
+        setNewComment(newComment)
+        // console.log(newComment)
+
+        await gamesApi.createGameComment(gameId, newComment);
+
+        setGame(oldState => {
+            [...oldState,
+            comments => {
+                [...comments],
+                [newComment._id], [newComment]
+            }]
+        })
+    }
+
 
     return (
         <section id="game-details">
@@ -54,8 +81,9 @@ export default function GameDetails() {
             {/* <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) --> */}
             <article className="create-comment">
                 <label>Add new comment:</label>
-                <form className="form">
-                    <textarea name="comment" placeholder="Comment......"></textarea>
+                <form className="form" onSubmit={handleFormSubmit}>
+                    <textarea name="username" placeholder="Username......" onChange={(e) => setUsername(e.target.value)}/>
+                    <textarea name="comment" placeholder="Comment......" onChange={(e) => setContent(e.target.value)}></textarea>
                     <input className="btn submit" type="submit" value="Add Comment" />
                 </form>
             </article>
