@@ -32,15 +32,20 @@ export default function GameDetails() {
         setNewComment(newComment)
         // console.log(newComment)
 
-        await gamesApi.createGameComment(gameId, newComment);
+        const createdComment = await gamesApi.createGameComment(gameId, newComment);
 
-        setGame(oldState => {
-            [...oldState,
-            comments => {
-                [...comments],
-                [newComment._id], [newComment]
-            }]
-        })
+        setGame(oldState => ({
+            ...oldState,
+            comments: {
+                ...oldState.comments,
+                createdComment
+            }
+        }));
+
+        setNewComment(null);
+
+        setUsername('');
+        setContent('');
     }
 
 
@@ -82,8 +87,8 @@ export default function GameDetails() {
             <article className="create-comment">
                 <label>Add new comment:</label>
                 <form className="form" onSubmit={handleFormSubmit}>
-                    <textarea name="username" placeholder="Username......" onChange={(e) => setUsername(e.target.value)}/>
-                    <textarea name="comment" placeholder="Comment......" onChange={(e) => setContent(e.target.value)}></textarea>
+                    <textarea name="username" placeholder="Username......" onChange={(e) => setUsername(e.target.value)} value={username}/>
+                    <textarea name="comment" placeholder="Comment......" onChange={(e) => setContent(e.target.value)} value={content}></textarea>
                     <input className="btn submit" type="submit" value="Add Comment" />
                 </form>
             </article>

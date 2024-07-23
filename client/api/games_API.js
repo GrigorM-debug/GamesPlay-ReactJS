@@ -19,7 +19,7 @@ async function getOne(gameId) {
 }
 
 async function createGameComment(gameId, newComment) {
-    console.log(newComment);
+    // console.log(newComment);
     const result = await requester.post(`${baseURL}/${gameId}/comments`, newComment)
 
     return result;
