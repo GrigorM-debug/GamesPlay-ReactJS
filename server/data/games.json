@@ -13,7 +13,24 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/29/Assassin%27s_Creed_III_Game_Cover.jpg",
         "description": "Assassin's Creed III is a 2012 action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It is the fifth major installment in the Assassin's Creed series, and a direct sequel to 2011's Assassin's Creed: Revelations.  ",
         "level": "No levels",
-        "_id": "b1c7c893-4db3-4eb4-8ef6-95b45a14cddf"
+        "_id": "b1c7c893-4db3-4eb4-8ef6-95b45a14cddf",
+        "comments": {
+            "eb3ac90e-4750-43c3-b228-da64f75ed271": {
+                "username": "Ivan",
+                "content": "My favourite game",
+                "_id": "eb3ac90e-4750-43c3-b228-da64f75ed271"
+            },
+            "61ebc58b-41cf-48a0-be95-16568b7bda7a": {
+                "username": "Toshko",
+                "content": "This game is so beautiful and the story is incredible",
+                "_id": "61ebc58b-41cf-48a0-be95-16568b7bda7a"
+            },
+            "15518f11-0843-4276-bad7-1502fb76b6cf": {
+                "username": "Goshko",
+                "content": "This game is so boring",
+                "_id": "15518f11-0843-4276-bad7-1502fb76b6cf"
+            }
+        }
     },
     "53a21c75-1919-4b6e-9a1e-44993716e569": {
         "title": "Counter-Strike 1.6",
@@ -21,6 +38,28 @@
         "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
         "description": "Counter-Strike (also known as Half-Life: Counter-Strike or Counter-Strike 1.6)[5] is a tactical first-person shooter game developed by Valve. It was initially developed and released as a Half-Life modification by Minh Gooseman Le and Jess Cliffe in 1999, before Le and Cliffe were hired and the game's intellectual property acquired.",
         "level": "No levels",
-        "_id": "53a21c75-1919-4b6e-9a1e-44993716e569"
+        "_id": "53a21c75-1919-4b6e-9a1e-44993716e569",
+        "comments": {
+            "4ab2ca21-d74e-4c41-897b-64f95d331f56": {
+                "username": "Grigor",
+                "content": "My childhood game. I played so much.",
+                "_id": "4ab2ca21-d74e-4c41-897b-64f95d331f56"
+            },
+            "4092756a-9d68-4f9f-958a-a7aa81c6e01b": {
+                "username": "Martin",
+                "content": "This game is legendary",
+                "_id": "4092756a-9d68-4f9f-958a-a7aa81c6e01b"
+            },
+            "b0984c33-bf7f-4087-9578-c0f717810de4": {
+                "username": "Rado",
+                "content": "I love this game",
+                "_id": "b0984c33-bf7f-4087-9578-c0f717810de4"
+            },
+            "04e40e73-0a1f-423b-a7e1-0ff056d6db0f": {
+                "username": "Fernando",
+                "content": "Legendary game",
+                "_id": "04e40e73-0a1f-423b-a7e1-0ff056d6db0f"
+            }
+        }
     }
 }
